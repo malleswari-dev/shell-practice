@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo hii every one 
+# this is comment , cant be executed. just for information purpose
+echo "hello world" 
