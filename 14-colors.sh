@@ -7,3 +7,4 @@ N="\e[0m"
 
 echo -e "$G success$N"
 echo -e "$R failure$N"
+echo "check this color"
