@@ -15,10 +15,10 @@ fi
 # functions receives inputs through args like shell script args.
 VALIDATE () { 
     if [ $1 -ne 0 ] ; then
-        echo "ERROR: installing $2 is $R failure $N"
+        echo -e " installing $2 is $R failure $N"
         exit 1
     else
-        echo "installing $2 is $G success $N"
+        echo -e "installing $2 is $G success $N"
     fi
 }
 
@@ -28,7 +28,7 @@ if [ $? -ne 0 ] ; then
     dnf install mysql -y
     VALIDATE $? "mysql"
 else
-    echo "mysql already exist .... $Y SKIPPING $N" 
+    echo -e "mysql already exist .... $Y SKIPPING $N" 
 fi   
 
 dnf list installed nginx
@@ -36,7 +36,7 @@ if [ $? -ne 0 ] ; then
     dnf install nginx -y
     VALIDATE $? "nginx"
 else
-    echo "nginx already exist .... $Y SKIPPING $N" 
+    echo -e "nginx already exist .... $Y SKIPPING $N" 
 fi
 
 dnf list installed python3
@@ -44,6 +44,6 @@ if [ $? -ne 0 ] ; then
     dnf install python3 -y
     VALIDATE $? "python3"
 else
-    echo "python3 already exist .... $Y SKIPPING $N" 
+    echo -e "python3 already exist .... $Y SKIPPING $N" 
 fi
 
