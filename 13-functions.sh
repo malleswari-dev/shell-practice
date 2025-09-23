@@ -18,3 +18,9 @@ VALIDATE () {
 
 dnf install mysql -y
 VALIDATE $? "mysql"
+
+dnf install nginx -y
+VALIDATE $? "nginx"
+
+dnf install python3 -y
+VALIDATE $? "python3"
