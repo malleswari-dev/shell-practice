@@ -5,9 +5,6 @@ G="\e[32m"
 y="\e[33m"
 N="\e[0m"
 
-echo -e "$G success$N"
-echo -e "$R failure$N"
-echo "check this color"
 
 USERID=$(id -u)
 
@@ -18,10 +15,10 @@ fi
 # functions receives inputs through args like shell script args.
 VALIDATE () { 
     if [ $1 -ne 0 ] ; then
-        echo "ERROR: installing $2 is $Rfailure $N"
+        echo "ERROR: installing $2 is $R failure $N"
         exit 1
     else
-        echo "installing $2 is $Gsuccess $N"
+        echo "installing $2 is $G success $N"
     fi
 }
 
