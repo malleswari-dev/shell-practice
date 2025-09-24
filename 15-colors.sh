@@ -5,7 +5,6 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then

@@ -16,4 +16,4 @@ LEADERS=("modi" "putin" "trudo" "trump")
 echo "all leaders:${LEADERS[@]}"
 echo "first leader:${LEADERS[0]}"
 echo "second leader:${LEADERS[1]}"
-echo "first leader:${LEADERS[10]}"
+echo "first leader:${LEADERS[10]}" # it cant show any results.just empty results give.
