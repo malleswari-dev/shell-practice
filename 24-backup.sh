@@ -28,10 +28,10 @@ USAGE() {
     exit1
 }
 
-# ## check source dir and dest dir passed or not ##
-# if [ $# -lt 2 ]; then
-#     USAGE
-# fi    
+ ## check source dir and dest dir passed or not ##
+if [ $# -lt 2 ]; then
+    USAGE
+fi    
 
 
 # ### check source dir exist or not ###
