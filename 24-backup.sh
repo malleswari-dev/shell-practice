@@ -35,13 +35,15 @@ fi
 
 
 # ### check source dir exist or not ###
-if [ ! -d $SCRIPT_DIR ]; then
+if [ ! -d $SOURCE_DIR ]; then
     echo -e "$R source $SOURCE_DIR doesn't exist $N"
+    exit 1
 fi
 
 # ### check dest dir exist or not ###
 if [ ! -d $DEST_DIR ]; then
     echo -e "$R destination $DEST_DIR doesn't exist $N"
+    exit 1
 fi
 
 # ### find the files ###
