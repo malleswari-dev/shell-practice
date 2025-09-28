@@ -41,7 +41,7 @@ fi
 
 # ### check dest dir exist or not ###
 if [ ! -d $DEST_DIR ]; then
-    echo -e "$R source $DEST_DIR doesn't exist $N"
+    echo -e "$R destination $DEST_DIR doesn't exist $N"
 fi
 
 # ### find the files ###
