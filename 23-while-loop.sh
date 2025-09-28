@@ -13,3 +13,9 @@ do
 done
 
 echo "Loop finished."
+
+while IFS= read -r line; do
+    # Process each line here
+    echo "Processing line: $line"
+    # You can perform other operations with the $line variable
+done < 20-script-1.sh
