@@ -14,6 +14,7 @@ done
 
 echo "Loop finished."
 
+#### file read ####
 while IFS= read -r line; do
     # Process each line here
     echo "Processing line: $line"
