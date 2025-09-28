@@ -35,14 +35,14 @@ fi
 
 
 # ### check source dir exist or not ###
-# if [ ! -d $SCRIPT_DIR ]; then
-#     echo -e "$R source $SOURCE_DIR doesn't exist $N"
-# fi
+if [ ! -d $SCRIPT_DIR ]; then
+    echo -e "$R source $SOURCE_DIR doesn't exist $N"
+fi
 
 # ### check dest dir exist or not ###
-# if [ ! -d $DEST_DIR ]; then
-#     echo -e "$R source $DEST_DIR doesn't exist $N"
-# fi
+if [ ! -d $DEST_DIR ]; then
+    echo -e "$R source $DEST_DIR doesn't exist $N"
+fi
 
 # ### find the files ###
 # FILES=$(find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS)
