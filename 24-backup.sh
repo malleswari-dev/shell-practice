@@ -50,13 +50,16 @@ fi
 FILES=$(find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS)
 
 if [ ! -z "${FILES}" ] ; then
+## start archeiving ##
     echo "file found: $FILES"
     TIMESTAMP=$(date +%F-%H-%M)
     ZIP_FILE_NAME="$DEST_DIR/app-logs-$TIMESTAMP.zip"
     echo "zip file name : $ZIP_FILE_NAME"
     find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS | zip -@ -j "$ZIP_FILE_NAME"
+ ## check archeival success or not ##   
     if [ -f $ZIP_FILE_NAME ] ; then
         echo -e "archeival ...$G SUCCESS $N"
+## delete if success ##        
         while IFS= read -r filepath; 
         do
             echo "deleting file: $filepath"
