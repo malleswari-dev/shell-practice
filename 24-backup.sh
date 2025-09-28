@@ -23,7 +23,7 @@ if [ $USERID -ne 0 ]; then
     exit 1 # failure is othher than 0
 fi
 
-USAGE () {
+USAGE() {
     echo -e "$R USAGE :: sudo sh 24-backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS> $N "
 }
 
