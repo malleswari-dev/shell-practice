@@ -12,7 +12,7 @@ DAYS=${3:-14} # if not provided consider as 14 days. default days is 14.
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shell-practice"
 SCRIPT_NAME=$( echo $0 | cut -d "." -f1 )
-LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
+LOG_FILE="$LOGS_FOLDER/backup.log"
 # /var/log/shell-practice/16-logs/log
 
 mkdir -p $LOGS_FOLDER
