@@ -20,7 +20,7 @@ echo "script started executed at:$(date)"  | tee -a $LOG_FILE
 
 if [ $USERID -ne 0 ]; then
     echo "ERROR:please run this script with root privilage"
-    exit 1 # failure is othher than 0
+    exit 1 # failure is other than 0
 fi
 
 USAGE() {
